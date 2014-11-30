@@ -3,9 +3,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="page-header">
+        <h1>Control Panel</h1>
+    </div>
     <form runat="server">
         <div class="container">
-            <h1>Control Panel</h1>
             <div class="row">
                 <div class="col-md-6">
                     <h2>Controls</h2>
