@@ -22,12 +22,39 @@ namespace AtmelCar {
         protected global::System.Web.UI.WebControls.Button carIgnition;
         
         /// <summary>
-        /// randomText control.
+        /// carThrottle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label randomText;
+        protected global::System.Web.UI.WebControls.Button carThrottle;
+        
+        /// <summary>
+        /// carLeft control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button carLeft;
+        
+        /// <summary>
+        /// carRight control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button carRight;
+        
+        /// <summary>
+        /// statusText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label statusText;
     }
 }

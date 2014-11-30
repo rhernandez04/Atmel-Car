@@ -7,15 +7,18 @@
         <h1>Control Panel</h1>
     </div>
     <form runat="server">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-xs-6">
                     <h2>Controls</h2>
-                    <p><asp:Button id="carIgnition" text="Start" runat="server" OnClick="carIgnition_Click"></asp:Button></p>
+                    <asp:Button id="carIgnition" text="Start" runat="server" OnClick="carIgnition_Click" CssClass="atmelButton"></asp:Button>
+                    <asp:Button ID="carThrottle" Text="Throttle" runat="server" OnClick="carThrottle_Click" CssClass="atmelButton"></asp:Button>
+                    <asp:Button ID="carLeft" Text="Turn left" runat="server" OnClick="carLeft_Click" CssClass="atmelButton"></asp:Button>
+                    <asp:Button ID="carRight" Text="Turn right" runat="server" OnClick="carRight_Click" CssClass="atmelButton"></asp:Button>
                 </div>
-                <div class="col-md-6">
+                <div class="col-xs-6">
                     <h2>Car Status</h2>
-                    <p><asp:Label id="randomText" text="Off" runat="server"></asp:Label></p>
+                    <asp:Label id="statusText" text="Off" runat="server"></asp:Label>
                 </div>
             </div>
         </div>

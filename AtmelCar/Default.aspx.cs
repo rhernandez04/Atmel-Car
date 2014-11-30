@@ -57,14 +57,14 @@ namespace AtmelCar
                         stream.Write(send_buffer, 0, send_buffer.Length);
 
                         //sock.SendTo(send_buffer, endPoint);
-                        randomText.Text = "sendcommand method ran";
+                        statusText.Text = "sendcommand method ran";
 
                         stream.Close();
                         sendingTcpClient.Close();
                     }
                     catch (SocketException)
                     {
-                        randomText.Text = "Connection Refused";
+                        statusText.Text = "Connection Refused";
                     }
                 }
             }
@@ -73,17 +73,25 @@ namespace AtmelCar
         protected void carIgnition_Click(object sender, EventArgs e)
         {
             sendCommand("8");
+            statusText.Text = "ignition clicked";
         }
 
-        protected void function1(object sender, EventArgs e)
+        protected void carThrottle_Click(object sender, EventArgs e)
         {
-
+            statusText.Text = "throttle clicked";
         }
 
-        protected void function2(object sender, EventArgs e)
+        protected void carLeft_Click(object sender, EventArgs e)
         {
-
+            statusText.Text = "left turn clicked";
         }
+
+        protected void carRight_Click(object sender, EventArgs e)
+        {
+            statusText.Text = "right turn clicked";
+        }
+
+        
 
     }
 }
