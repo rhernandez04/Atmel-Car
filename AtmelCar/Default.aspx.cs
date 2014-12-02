@@ -112,9 +112,5 @@ namespace AtmelCar
             statusText.Text = "temp F clicked";
         }
 
-        
-
-        
-
     }
 }
